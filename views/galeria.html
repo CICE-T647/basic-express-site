@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Galería de imágenes</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="/js/script.js"></script>
+    
+</head>
+<body>
+
+        <ul>
+            <li><a href="/home">Home</a></li>
+            <li><a href="/galeria">Galería</a></li>
+            <li><a href="/about">About</a></li>              
+        </ul>
+    
+    <div class="box">
+        Galería de imágenes
+    </div>
+
+
+    <div class="row">
+            <div class="column">
+              <img src="/images/nature1.jpg" alt="Nature" onclick="myFunction(this);">
+            </div>
+            <div class="column">
+              <img src="/images/nature2.jpg" alt="Snow" onclick="myFunction(this);">
+            </div>
+            <div class="column">
+              <img src="/images/nature3.jpg" alt="Mountains" onclick="myFunction(this);">
+            </div>
+            <div class="column">
+              <img src="/images/nature4.jpg" alt="Lights" onclick="myFunction(this);">
+            </div>
+          </div>
+          
+          <!-- The expanding image container -->
+          <div class="container">
+            <!-- Close the image -->
+            <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+          
+            <!-- Expanded image -->
+            <img id="expandedImg" style="width:100%">
+          
+            <!-- Image text -->
+            <div id="imgtext"></div>
+          </div>
+</body>
+</html>
