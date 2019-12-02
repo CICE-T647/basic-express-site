@@ -1,0 +1,10 @@
+body {
+    background: #efefef;
+    max-width: 100%;
+    margin: 0 auto;
+    display: block;
+}
+.logo {
+    max-width: 100px;
+    height: auto;
+}
