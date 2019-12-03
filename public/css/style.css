@@ -1,0 +1,82 @@
+.hidden {
+    display: none;
+}
+body {
+    background-color: pink;
+    padding: 0px;
+    margin: 0px;
+    font-family: "VT323", monospace;
+    color: #fff;
+    height: 100%;
+}
+
+.hero {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+}
+
+h1 {
+    text-shadow: 10px 10px 0 rgba(0, 0, 0, 1);
+    font-size: 100px;
+}
+canvas {
+    background: none;
+    margin: auto;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+.bye-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2%;
+}
+.list {
+    display: flex;
+    justify-content: space-around;
+    font-size: 22px;
+    width: 80%;
+    list-style-type: none;
+    cursor: pointer;
+}
+.list > li > a {
+    text-decoration: none;
+}
+.click-button {
+    border: 3px solid rgb(231, 0, 96);
+    border-radius: 20px;
+    cursor: pointer;
+    padding: 10px;
+    max-width: 300px;
+}
+.main-div {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+}
+.popup {
+    max-width: 400px;
+    padding: 15px;
+    border: 3px solid rgb(231, 0, 96);
+    border-radius: 20px;
+}
+.select-response {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    margin-left: 0;
+    padding-left: 0;
+}
+.yes,
+.no {
+    border: 3px solid rgb(231, 0, 96);
+    border-radius: 5px;
+    padding: 5px;
+}
