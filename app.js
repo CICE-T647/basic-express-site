@@ -2,12 +2,16 @@ const express = require("express");
 const app = express();
 const PORT = 3000;
 
-app.get("/home", (req, res) => res.sendFile(__dirname + "/views/home.html"));
+app.get("/home", (req, res) => {
+    res.sendFile(__dirname + "/views/home.html");
+});
 
-app.get("/about", (res, req) => res.sendFile(__dirname + "views/about.html"));
+app.get("/about", (req, res) => {
+    res.sendFile(__dirname + "/views/about.html");
+});
 
-app.get("/thankspage", (res, req) =>
-    res.sendFile(__dirname + "views/thankspage.html")
+app.get("/thankspage", (req, res) =>
+    res.sendFile(__dirname + "/views/thankspage.html")
 );
 
 app.use(express.static(__dirname + "/public"));
